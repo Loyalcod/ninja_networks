@@ -18,7 +18,7 @@ class NinjaController extends Controller
     public function show(Ninja $ninja)
     {
         $ninja->load('dojo');
-        return view('ninjas.show', ['ninja' => $ninja]);
+        return view('ninjas.show', ['ninja' => $ninja]); 
     }
 
     public function create() {
